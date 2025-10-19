@@ -1,0 +1,37 @@
+@charset "UTF-8"; /*regra, serve para ser compátivel com acentuação*/
+
+/*em HTML é id = em CSS é #, é uníco, utilizar em um só elemento*/
+/*em HTML é class = em CSS é ., é multiplo, pode utilizar em vários elementos */
+
+body{
+    background-color:rgb(48, 66, 48);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:rgb(2, 43, 0);
+}
+
+h1#principal { /*A tag <h1 id="principal">no html serve para identificar o título principal, permite aplicar um estilo ou manipular no css usando o (#)*/
+    text-align: center;
+}
+
+h2 {
+    color: rgb(151, 180, 150);
+}
+
+.basico {
+    color: rgb(0, 255, 13);;
+}
+
+.intermediario {
+    color: rgb(238, 255, 0);
+}
+
+.avançado {
+    color: rgb(255, 0, 0);;
+}
+
+.destaque {
+    background-color: blueviolet;
+}

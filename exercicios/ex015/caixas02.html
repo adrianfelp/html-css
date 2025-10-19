@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruuping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(80, 79, 79);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404); /*é a sombra da caixa, em ordem são horizontal, vertical, espalhameno, black é a cor, outra opção é pelo devtools.*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px; /*arredondamento de bordas da caixa*/
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(122, 122, 122);
+
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--'header' define o cabeçalho de uma página, conteúdo-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://www.youtube.com/watch?v=JPMm-jyKOaM">link do canal</a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+    
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero quod quo? In facilis dolorum laboriosam cumque quibusdam modi explicabo necessitatibus consectetur. Doloremque numquam aut magni, nihil nemo rerum soluta.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Adrian Felipe</p>
+
+    </footer>
+    <!-- tag 'header' -  cabeçalho.
+         tag 'nav' - menu, navegação.
+         tag 'main'- conteúdo principal.
+         tag 'section'-  Define um bloco ou um grupo de um assunto específico.
+         tag 'aside'- é um componente que representa um conteúdo tangencialmente relacionado ao conteúdo principal.
+         tag 'article'- é uma tag que representa uma unidade de conteúdo independente e autocontida.
+     
+    
+    
+    -->
+</body>
+</html>

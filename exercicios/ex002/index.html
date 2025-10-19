@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>O comando <code>document.getElementById(teste)</code> é escrito em linguagem JavaScript.</p><!--A tag code é uma fonte monoespaçada-->
+    <hr>
+    <pre>
+    <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+        print(f'O número {num} é ÍMPAR') 
+print('Fim do programa')
+    </code> <!--<code>	-> Fonte monoespaçada, boa pra ler codes. Não mantém indentação. Para isso deve-se envelopar dentro da tag <pre>-->
+    </pre> <!--<pre>   	-> Cria indentação para a tag <code>-->
+        <!-- Obs: Movimentar o cód todo pra direita, seleciona o cód e tecla: TAB. Para a esquerda: SHIFT + TAB.-->
+    <hr>
+    <h2>Citações simples:</h2>
+    <p>Como diria o pai de um amigo: <q>o cumputador é um burro muito rápido</q></p> <!--a tag (q) indica que o texto dentro da tag é uma citação, algo para prestar atenção, caso não seja, usar aspas  -->
+    <hr>
+    <h2>Citações completas:</h2>
+    <p>Temos a tag (blockquote) exemplo:</p>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y"> 
+        Bem vindo às possibilidades desenfreadas, malucas e maravilhosas da World Wide Web, ou, mais, simplesmente, a web. HTML, XHTML e CSS Para Leigos.
+    </blockquote>
+    <hr>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, Estou adorando!</p>
+    <hr>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">aprendendo a criar coisas em HTML.</bdo>
+        <!--A tag (bdo) é para iverter o texto, tag um pouco inútil-->
+    <hr>
+    
+
+    
+    
+</body>
+</html>
