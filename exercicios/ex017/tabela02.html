@@ -11,7 +11,8 @@
 
         table {
             width: 500px;
-            border-collapse: collapse;      
+            border-collapse: collapse;   
+            position: relative;   
         }
 
         td, th {
@@ -29,6 +30,15 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky; /*serve para manter o título da coluna fixo ao rolar com o mouse, usar em tabela grande*/
+            top: -1px; /* para grudar o título na tela*/
+            background-color: lightgray; /*utilizar a mesma cor para não ficar só a escrita fixa*/
+        }
+
+        tbody > tr:nth-child(odd) { /*:nth-child(2n) para deixar a tabela zebrada também, ou  usar odd ou even, ímpar e par*/
+            background-color: lightgray;
         }
 
         td.num {
