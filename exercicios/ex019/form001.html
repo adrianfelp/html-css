@@ -11,12 +11,20 @@
     </style>
 </head>
 <body>
-    <!--input submit = cria um botão clicável que envia os dados de um formulário para o servidor-->
+    <!--input submit = cria um botão clicável que envia os dados de um formulário para o servidor
+
+    input text = é um campo de uma linha para entrada de texto simples, usado em formulários para coletar dados como nomes, endereços, ou qualquer informação textual-->
+
+    <!--Para enviar dados do formulário é necessario add o 'action' enviar para linguagem php-->
+
+    <!--'name' mais útil para html, php e 'id' para js, label-->
+
+    <!-- usar 'label' associar um texto descritivo (rótulo) a um campo de formulário para bom funcionamento no mecanismo de busco do google-->
 
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
+    <form action="cadastro.php" autocomplete="off"> <!--desabilitar o preenchimento automático, recentes-->
+        <p><label for="nome">Nome:</label><input type="text" name="nome" id="nome"></p>
+        <p><label for="sobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome"> </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
     
