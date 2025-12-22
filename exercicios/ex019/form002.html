@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--usar required no input para obrigar a preencer o campo de usuário e senha
+
+        'minlength' min de letras obrigatórias
+        'maxlength' max de letras obrigatórias
+        
+        'size' para aumentar o tam da caixa se desejar
+        
+        'placeholder' se desejar add algo dentro da caixa, é uma dica para o usuário
+        
+        'autocomplete' add no 'form' e deixar 'on' e add em cada 'input, caixa' o que ela se refere-->
+
+        
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" ="15" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="8" placeholder="sua senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

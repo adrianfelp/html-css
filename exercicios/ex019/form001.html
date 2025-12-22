@@ -21,8 +21,14 @@
 
     <!-- usar 'label' associar um texto descritivo (rótulo) a um campo de formulário para bom funcionamento no mecanismo de busco do google-->
 
+    <!--existem 2 metodos para envio de formulário:
+    1 = 'get' por padrão, metodo que consta os dados na url
+    2 = 'post' metodo que esconde na url, mais ainda consta no devtools-->
+
+    <!--aprender https para segurança de dados-->
+
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> <!--desabilitar o preenchimento automático, recentes-->
+    <form action="cadastro.php" method="get" autocomplete="off"> <!--desabilitar o preenchimento automático, recentes-->
         <p><label for="nome">Nome:</label><input type="text" name="nome" id="nome"></p>
         <p><label for="sobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome"> </p>
         <p><input type="submit" value="Enviar"></p>
