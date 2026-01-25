@@ -81,7 +81,7 @@ div.campo > label {
 }
 
 div.campo > span {
-    color: white
+    color: white;
     font-size: 2em;
     width: 40px;
     text-align: center;
