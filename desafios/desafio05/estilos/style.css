@@ -81,7 +81,7 @@ div.campo > label {
 }
 
 div.campo > span {
-    color: white;
+    color: white
     font-size: 2em;
     width: 40px;
     text-align: center;
@@ -95,10 +95,6 @@ div.campo > input {
     border: none;
     border-radius: 8px;
     padding: 4px;
-}
-
-div.campo > input:focus-within {
-    background-color: white;
 }
 
 form > input[type=submit] {
