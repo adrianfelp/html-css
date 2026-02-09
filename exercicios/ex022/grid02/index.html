@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        /*align sempre para vertical, justify sempre para horizontal, somenta para Grid Layout
+        
+        Para simplificar o código podemos usar:
+        
+          place-items: start center; = se refere em ordem o align-items e justify-items.
+
+          place-content: start end; = se refere em ordem o align-content e justify-content.
+
+          grid-template: 100px 100px 100px / auto auto auto;
+          primeiro o rows depois columns.
+
+          temos o 'repeat' para simplificar tambem, exemplo:
+          grid-template: repeat (3, 100px) / repeat (3, auto);
+
+        */
+        div.container{
+            border: 3px solid blue;
+            display: grid;
+            grid-template-rows: 80px 80px 80px;
+            grid-template-columns: 120px 120px 120px;
+            grid-auto-flow: row;  /*row padrão*/
+            grid-auto-rows: 80px; /*Para quando for criado linhas automaticamente elas vão ter 80px*/
+            grid-auto-columns: 120px;
+            gap: 10px;
+            place-items: normal normal;
+            place-content: normal normal;
+        }
+
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
